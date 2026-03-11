@@ -1,0 +1,11 @@
+{
+  "name": "get_crypto_price",
+  "description": "获取指定加密货币对在币安的实时价格。",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "symbol": { "type": "string", "description": "例如 BTCUSDT" }
+    },
+    "required": ["symbol"]
+  }
+}
