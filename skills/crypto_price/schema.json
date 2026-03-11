@@ -1,0 +1,23 @@
+{
+  "name": "get_crypto_price",
+  "description": "获取指定加密货币对在币安 (Binance) 的实时美元价格。例如 BTCUSDT, ETHUSDT 等。",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "交易对符号，必须为大写，例如 'BTCUSDT'。如果用户只提到了 'BTC'，请自动补全为 'BTCUSDT'。",
+        "default": "BTCUSDT"
+      }
+    },
+    "required": ["symbol"]
+  },
+  "output": {
+    "type": "object",
+    "properties": {
+      "symbol": { "type": "string" },
+      "price": { "type": "number" },
+      "timestamp": { "type": "integer" }
+    }
+  }
+}
