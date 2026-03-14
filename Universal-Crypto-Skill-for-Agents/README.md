@@ -25,7 +25,7 @@ We offer white-glove architectural services for serious developers:
 #### 📩 Contact the Lead Architect
 Connect with us to discuss your scaling needs:
 - **Telegram Direct**: [@MTJC11](https://t.me/MTJC11)
-- **Email/Web**: *Available upon verified inquiry*
+- **Live Demo Bot**: [Nova CS Bot](https://t.me/wj_006_bot) (v8735056691)
 
 ---
 *Built with ❤️ by Nova Architecture Studio. Bridging logic and profit.*
