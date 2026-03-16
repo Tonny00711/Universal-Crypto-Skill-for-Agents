@@ -1,0 +1,14 @@
+{
+  "name": "get_market_sentiment",
+  "description": "获取特定加密货币的市场情绪评分 (结合新闻与社交媒体数据)",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "加密货币代码 (如 BTC, ETH)"
+      }
+    },
+    "required": ["symbol"]
+  }
+}

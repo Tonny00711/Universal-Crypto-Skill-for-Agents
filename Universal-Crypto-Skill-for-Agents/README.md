@@ -8,6 +8,7 @@ In the agentic economy, milliseconds are measured in dollars. Most AI agents fai
 
 ### 🏆 Why Top Architects Choose Nova-01:
 - **Zero-Hop Precision**: Direct integration with Binance Cloud API. No middleman, no extra latency.
+- **Multi-Source Sentiment**: (New!) Integrated sentiment analysis scoring for deep market context.
 - **Enterprise-Grade Security**: Designed for privacy-first deployments. Supports encrypted `.env` environments.
 - **Pure Function Calling**: Optimized JSON Schema for zero-shot recognition in OpenAI, Claude, and OpenClaw.
 - **Self-Healing Parser**: Automatically normalizes messy user inputs (e.g., "get the price of eth" → `ETHUSDT`).
