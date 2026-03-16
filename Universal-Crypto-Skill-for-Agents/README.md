@@ -19,8 +19,8 @@ In the agentic economy, milliseconds are measured in dollars. Most AI agents fai
 **Stop building toy agents. Start building profit engines.** 
 
 #### 🏪 Official Stores:
-- **GitHub 旗舰店**: [Nova 工作室](https://github.com/Tonny00711)
-- **RapidAPI Store**: [Nova 工作室](https://rapidapi.com/user/nova-studio)
+- **GitHub Store**: [Nova Architecture Studio](https://github.com/Tonny00711)
+- **RapidAPI Store**: [Nova Architecture Studio](https://rapidapi.com/user/nova-studio)
 
 We offer white-glove architectural services for serious developers:
 - **Custom Oracle Clusters**: High-frequency data pipelines tailored for HFT bots.
@@ -33,4 +33,4 @@ Connect with us to discuss your scaling needs:
 - **Live Demo Bot**: [Nova CS Bot](https://t.me/wj_006_bot) (v8735056691)
 
 ---
-*Built with ❤️ by Nova 工作室. Bridging logic and profit.*
+*Built with ❤️ by Nova Architecture Studio. Bridging logic and profit.*

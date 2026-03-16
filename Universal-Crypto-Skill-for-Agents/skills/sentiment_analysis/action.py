@@ -29,7 +29,7 @@ def get_market_sentiment(symbol: str):
         "label": label,
         "weighted_sources": sources,
         "timestamp": int(time.time()),
-        "notice": "Commercial Version: Nova 工作室 Private Access required for real-time live scoring."
+        "notice": "Commercial Version: Nova Architecture Studio Private Access required for real-time live scoring."
     }
 
 if __name__ == "__main__":
