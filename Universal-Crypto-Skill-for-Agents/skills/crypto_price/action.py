@@ -12,26 +12,35 @@ def get_crypto_price(symbol: str):
     if not symbol.endswith("USDT") and symbol in ["BTC", "ETH", "BNB", "SOL"]:
         symbol += "USDT"
 
-    try:
-        params = {"symbol": symbol}
-        response = requests.get(base_url, params=params, timeout=5)
-        
-        # 处理币对不存在的情况
-        if response.status_code == 400:
-            return {"error": f"交易对 {symbol} 无效，请检查名称。"}
-            
-        response.raise_for_status()
-        data = response.json()
-        
-        return {
-            "symbol": data["symbol"],
-            "price": float(data["price"]),
-            "timestamp": int(time.time() * 1000),
-            "source": "Binance"
-        }
-        
-    except Exception as e:
-        return {"error": f"API 调用失败: {str(e)}"}
+    # 尝试多个数据源以应对地区限制
+    sources = [
+        ("Binance", "https://api.binance.com/api/v3/ticker/price", {"symbol": symbol}),
+        ("Binance-US", "https://api.binance.us/api/v3/ticker/price", {"symbol": symbol}),
+        ("CoinGecko", f"https://api.coingecko.com/api/v3/simple/price?ids={symbol.lower().replace('usdt','')}&vs_currencies=usd", {})
+    ]
+
+    for name, url, params in sources:
+        try:
+            response = requests.get(url, params=params, timeout=5)
+            if response.status_code == 200:
+                data = response.json()
+                if name.startswith("Binance"):
+                    price = float(data["price"])
+                else:
+                    # CoinGecko format
+                    coin_id = symbol.lower().replace('usdt','')
+                    price = float(data[coin_id]["usd"])
+                
+                return {
+                    "symbol": symbol,
+                    "price": price,
+                    "timestamp": int(time.time() * 1000),
+                    "source": name
+                }
+        except:
+            continue
+
+    return {"error": f"所有数据源调用失败，请检查网络连接。"}
 
 # 开发者自测
 if __name__ == "__main__":
