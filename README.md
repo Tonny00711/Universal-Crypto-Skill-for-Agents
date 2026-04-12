@@ -1,3 +1,16 @@
+---
+## 💰 Pricing & Setup
+
+| Option | Price | What you get |
+|--------|-------|-------------|
+| Self-install package | $20-30 USDT | Full skill files + setup guide |
+| Remote deployment | $150-200 USDT | I set it up in your bot remotely |
+| Custom data pipeline | $500+ USDT | Tailored high-frequency setup |
+
+Payment: USDT / BTC only. Full payment before work starts.  
+Contact: DM on Reddit · wanj007@gmail.com
+
+---
 # 🚀 Universal Crypto Price Skill for AI Agents
 **让你的 Agent 具备实时加密货币行情分析能力**
 
